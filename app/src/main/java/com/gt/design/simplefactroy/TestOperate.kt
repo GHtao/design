@@ -9,6 +9,7 @@ class TestOperate{
         fun main(args: Array<String>) {
             var addOperate = OperateFactroy.getOperate(OperateEnum.ADD)
             var result = addOperate.getResult(11.1f,22.2f)
+
             val divOperate = OperateFactroy.getOperate(OperateEnum.DIV)
             val divResult = divOperate.getResult(10f,3f)
 
