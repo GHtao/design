@@ -10,8 +10,12 @@ class TestOperate{
             var addOperate = OperateFactroy.getOperate(OperateEnum.ADD)
             var result = addOperate.getResult(11.1f,22.2f)
             val divOperate = OperateFactroy.getOperate(OperateEnum.DIV)
-            val divResult = divOperate.getResult(10f,0f)
-            System.out.print("div result:"+divResult)
+            val divResult = divOperate.getResult(10f,3f)
+
+            val multOperater = OperateFactroy.getOperate(OperateEnum.MULT)
+            val multResult = multOperater.getResult(11.1f, 22.2f)
+
+            System.out.print("mult result:"+multResult)
         }
     }
 }
