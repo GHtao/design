@@ -1,4 +1,4 @@
-package com.gt.design.simplefactroy
+package com.gt.design.factroy.simple
 
 /**
  * Created by gt on 2018/11/16.

@@ -18,6 +18,16 @@ class DynamicTest{
             val proxyPursuit = Proxy.newProxyInstance(IGiveGift::class.java.classLoader,
                 arrayOf(IGiveGift::class.java),
                 dynamicProxyInvocation) as IGiveGift
+
+//            val proxyPursuit = Proxy.newProxyInstance(IGiveGift::class.java.classLoader,
+//                arrayOf(IGiveGift::class.java)
+//            ) { p0, p1, p2 ->
+//                SysoUtil.syso("dynamic invoke start")
+//                val any = p1!!.invoke(pursuit,*(p2 ?: emptyArray()))//*号将数组转换成可变参数
+//                SysoUtil.syso("dynamic invoke end")
+//                any
+//            } as IGiveGift
+
             proxyPursuit.giveChocolate()
 
 //            val proxyInvocation = ProxyInvocation<IGiveGift>(pursuit)
