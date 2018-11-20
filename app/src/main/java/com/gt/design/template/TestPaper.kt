@@ -4,6 +4,7 @@ import com.gt.design.utils.SysoUtil
 
 /**
  * Created by gt on 2018/11/20.
+ * 把不变的行为搬移到父类 去除子类中重复的代码
  */
 abstract class TestPaper{
     /**
